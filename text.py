@@ -1,9 +1,11 @@
 from twilio.rest import Client
 import os, time, schedule, random
+
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 twilio_number = os.environ['TWILIO_NUMBER']
 target_number = os.environ['TARGET_NUMBER']
+
 MOTIVATIONAL_QUOTES = ['Write it on your heart that every day is the best day in the year.',
                         'Smile in the mirror. Do that every morning and you’ll start to see a big difference in your life.',
                         'Morning comes whether you set the alarm or not.'
